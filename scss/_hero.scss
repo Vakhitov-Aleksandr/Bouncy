@@ -1,0 +1,164 @@
+.hero {
+  height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  background: #707070;
+  background-image: url(../img/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+.intro {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: -8px;
+}
+.menu-top {
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+  &__item {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin-left: 4px;
+  }
+  &__link {
+    display: block;
+    padding: 10px 19px;
+    transition: all 0.3s;
+    border: solid 1px transparent;
+    border-radius: 20px;
+    &:hover {
+      border: solid 1px #fff;
+    }
+  }
+  &__burger {
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    display: none;
+    span{
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: #fff;
+      position: relative;
+      &::before,
+      &::after{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        background: #fff;
+        transition: 0.3s;
+      }
+      &::before{
+        transform: translateY(-8px);
+      }
+      &::after{
+        transform: translateY(8px);
+      }
+    }
+    &.active{
+      span{
+        height: 0;
+        &::before{
+          transform: rotate(45deg);
+        }
+        &:after{
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+  &.open{
+    transform: translateX(0);
+  }
+
+}
+.offer{
+  max-width: 52%;
+  margin: 0 auto;
+  text-align: center;
+  transform: translateY(-10vh);
+  &__title{
+    font-size: 35px;
+    color: #fff;
+    padding-bottom: 25px;
+  }
+  &__subtitle{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+  }
+}
+
+/* xl-размер (>=1200px) */
+/* CSS для >=1200px */
+
+/* lg-размер (<=1199px) */
+@media (max-width: 1199px) {
+  /* CSS для ширины от 992px до 1199px */
+}
+
+/* md-размер (<=991px) */
+@media (max-width: 991px) {
+  /* CSS для ширины от 768px до 991px */
+  .menu-top{
+    position: absolute;
+    z-index: 100;
+    transform: translateX(100%);
+    background: #fff;
+    top: 10vh;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    &__item{
+      color: #333;
+      font-size: 20px;
+    }
+    &__burger{
+      display: block;
+    }
+  }
+}
+
+/* sm-размер (<=768px) */
+@media (max-width: 767px) { 
+  /* CSS для ширины от 576px до 767px */
+ .offer{
+   max-width: none;
+ }
+}
+
+/* xs-размер (<=575px) */
+@media (max-width: 575px) {
+  /* CSS для ширины до 575px (включительно) */
+  .menu-top{
+    left: 0;
+  }
+}
