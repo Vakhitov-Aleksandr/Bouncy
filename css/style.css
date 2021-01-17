@@ -2,6 +2,7 @@
 :root {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: 100%;
 }
 
 *,
@@ -22,6 +23,10 @@ li {
   list-style: none;
 }
 
+p {
+  line-height: 1.7;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
@@ -35,7 +40,7 @@ body {
 }
 
 .section {
-  padding: 60px 0;
+  padding: 94px 0;
 }
 
 .hero {
@@ -245,6 +250,95 @@ body {
   /* CSS для ширины до 575px (включительно) */
   .menu-top {
     left: 0;
+  }
+}
+
+.about__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.about__inner .badge {
+  max-width: 39%;
+}
+
+.about__inner .badge__title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #333B46;
+}
+
+.about__inner .badge__text {
+  padding: 36px 0 27px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #81868E;
+}
+
+.about__inner .badge__btn {
+  display: inline-block;
+  padding: 8px 30px;
+  font-size: 16px;
+  color: #333B46;
+  border-radius: 20px;
+  border: solid 1px #333B46;
+}
+
+.about__inner .figure {
+  position: absolute;
+  right: 0;
+}
+
+.about__inner .figure__img {
+  vertical-align: middle;
+}
+
+/* xl-размер (>=1200px) */
+/* CSS для >=1200px */
+/* lg-размер (<=1199px) */
+@media (max-width: 1199px) {
+  /* CSS для ширины от 992px до 1199px */
+}
+
+/* md-размер (<=991px) */
+@media (max-width: 991px) {
+  /* CSS для ширины от 768px до 991px */
+  .about .badge {
+    max-width: 50%;
+  }
+}
+
+/* sm-размер (<=768px) */
+@media (max-width: 767px) {
+  /* CSS для ширины от 576px до 767px */
+  .about {
+    overflow-x: hidden;
+  }
+  .about .badge {
+    max-width: 80%;
+  }
+  .about .figure {
+    position: absolute;
+    right: -30%;
+  }
+}
+
+/* xs-размер (<=575px) */
+@media (max-width: 575px) {
+  /* CSS для ширины до 575px (включительно) */
+  .about .badge {
+    max-width: none;
+  }
+  .about .figure {
+    display: none;
   }
 }
 

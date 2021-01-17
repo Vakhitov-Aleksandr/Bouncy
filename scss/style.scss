@@ -1,5 +1,6 @@
 :root{
   box-sizing: border-box;
+  font-size: 100%;
 }
 *,
 *::before,
@@ -15,6 +16,9 @@ a{
 li{
   list-style: none;
 }
+p{
+  line-height: 1.7;
+}
 body {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
@@ -26,10 +30,11 @@ body {
   margin: 0 auto;
 }
 .section{
-  padding: 60px 0;
+  padding: 94px 0;
 }
 
 @import "hero";
+@import "about";
 
 /* xl-размер (>=1200px) */
 /* CSS для >=1200px */

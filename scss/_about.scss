@@ -1,0 +1,86 @@
+.about{
+  &__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    .badge{
+      max-width: 39%;
+
+      &__title{
+        font-size: 20px;
+        font-weight: 400;
+        color: #333B46;
+      }
+      &__text{
+        padding: 36px 0 27px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #81868E;
+      }
+
+      &__btn{
+        display: inline-block;
+        padding: 8px 30px;
+        font-size: 16px;
+        color: #333B46;
+        border-radius: 20px;
+        border: solid 1px #333B46;
+      }
+    }
+    .figure{
+      position: absolute;
+      right: 0;
+      &__img{
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+/* xl-размер (>=1200px) */
+/* CSS для >=1200px */
+
+/* lg-размер (<=1199px) */
+@media (max-width: 1199px) {
+  /* CSS для ширины от 992px до 1199px */
+}
+
+/* md-размер (<=991px) */
+@media (max-width: 991px) {
+  /* CSS для ширины от 768px до 991px */
+  .about{
+    .badge{
+      max-width: 50%;
+    }
+
+  }
+}
+
+/* sm-размер (<=768px) */
+@media (max-width: 767px) { 
+  /* CSS для ширины от 576px до 767px */
+  .about{
+    overflow-x: hidden;
+    .badge{
+      max-width: 80%;
+    }
+    .figure{
+      position: absolute;
+      right:-30%;
+    }
+  }
+}
+
+/* xs-размер (<=575px) */
+@media (max-width: 575px) {
+  /* CSS для ширины до 575px (включительно) */
+  .about{
+    .badge{
+      max-width: none;
+    }
+    .figure{
+      display: none;
+    }
+  }
+}
