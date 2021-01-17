@@ -3,6 +3,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 100%;
+  --color-accent: #19BD9A;
 }
 
 *,
@@ -17,6 +18,10 @@
 a {
   text-decoration: none;
   color: currentColor;
+}
+
+b.accent {
+  color: var(--color-accent);
 }
 
 li {
@@ -41,6 +46,25 @@ body {
 
 .section {
   padding: 94px 0;
+}
+
+.section-header {
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.section-header__title {
+  font-size: 20px;
+  color: #333B46;
+  font-weight: 700;
+  padding-bottom: 28px;
+  text-transform: uppercase;
+}
+
+.section-header__subtitle {
+  font-size: 14px;
+  color: #81868E;
+  font-weight: 400;
 }
 
 .hero {
@@ -272,7 +296,8 @@ body {
 
 .about__inner .badge__title {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 700;
+  text-transform: uppercase;
   color: #333B46;
 }
 
@@ -339,6 +364,74 @@ body {
   }
   .about .figure {
     display: none;
+  }
+}
+
+.details {
+  background: #f3f3f3;
+}
+
+.details .title {
+  font-size: 20px;
+  color: #464646;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
+.details .article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.details .article__text {
+  font-size: 16px;
+  color: #81868e;
+  width: 53%;
+}
+
+.details .article__text:first-child {
+  max-width: 35%;
+}
+
+/* xl-размер (>=1200px) */
+/* CSS для >=1200px */
+/* lg-размер (<=1199px) */
+@media (max-width: 1199px) {
+  /* CSS для ширины от 992px до 1199px */
+}
+
+/* md-размер (<=991px) */
+@media (max-width: 991px) {
+  /* CSS для ширины от 768px до 991px */
+}
+
+/* sm-размер (<=768px) */
+@media (max-width: 767px) {
+  /* CSS для ширины от 576px до 767px */
+  .details .article {
+    margin: 0 -15px;
+  }
+  .details .article__text {
+    width: 50%;
+    padding: 0 15px;
+  }
+  .details .article__text:first-child {
+    max-width: none;
+  }
+}
+
+/* xs-размер (<=575px) */
+@media (max-width: 575px) {
+  /* CSS для ширины до 575px (включительно) */
+  .details .article__text {
+    width: 100%;
+    padding: 15px;
   }
 }
 
