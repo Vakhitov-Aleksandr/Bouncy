@@ -1,56 +1,62 @@
-:root{
+:root {
   box-sizing: border-box;
   font-size: 100%;
 
-  --color-accent: #19BD9A;
+  --color-accent: #19bd9a;
 }
 *,
 *::before,
-*::after{
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
-a{
+a {
   text-decoration: none;
   color: currentColor;
 }
-b.accent{
-  color:  var(--color-accent);
+b.accent {
+  color: var(--color-accent);
 }
-li{
+li {
   list-style: none;
 }
-p{
+p {
   line-height: 1.7;
 }
 body {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
 }
-.container{
+nav,
+header,
+footer,
+figure {
+  display: block;
+}
+.container {
   width: 100%;
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
-.section{
+.section {
   padding: 94px 0;
 }
 
-.section-header{
+.section-header {
   padding-bottom: 60px;
   text-align: center;
-  &__title{
+  &__title {
     font-size: 20px;
-    color: #333B46;
+    color: #333b46;
     font-weight: 700;
     padding-bottom: 28px;
     text-transform: uppercase;
   }
-  &__subtitle{
+  &__subtitle {
     font-size: 14px;
-    color: #81868E;
+    color: #81868e;
     font-weight: 400;
   }
 }
@@ -58,6 +64,7 @@ body {
 @import "hero";
 @import "about";
 @import "details";
+@import "featured";
 
 /* xl-размер (>=1200px) */
 /* CSS для >=1200px */
@@ -65,7 +72,7 @@ body {
 /* lg-размер (<=1199px) */
 @media (max-width: 1199px) {
   /* CSS для ширины от 992px до 1199px */
-  .container{
+  .container {
     max-width: 991px;
   }
 }
@@ -73,16 +80,15 @@ body {
 /* md-размер (<=991px) */
 @media (max-width: 991px) {
   /* CSS для ширины от 768px до 991px */
-  .container{
+  .container {
     max-width: 767px;
   }
-
 }
 
 /* sm-размер (<=768px) */
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
   /* CSS для ширины от 576px до 767px */
-  .container{
+  .container {
     max-width: 575px;
   }
 }
@@ -90,7 +96,7 @@ body {
 /* xs-размер (<=575px) */
 @media (max-width: 575px) {
   /* CSS для ширины до 575px (включительно) */
-  .container{
+  .container {
     max-width: none;
   }
 }

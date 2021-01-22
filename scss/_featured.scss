@@ -1,0 +1,145 @@
+.featured {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      height: 319px;
+      width: 33.333%;
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:nth-child(1) {
+        flex: 2;
+      }
+      &:hover header {
+        transform: translateY(100%);
+      }
+      &:hover a{
+        opacity: 1;
+        transition: 0.7s;
+      }
+      a {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        background: #fff;
+        border-radius: 50%;
+        color: #333;
+        font-weight: 700;
+        text-transform: uppercase;
+        opacity: 0;
+        
+        img{
+          width: 10px;
+          height: 10px;
+        }
+      }
+      header {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.685);
+        transition: 0.5s;
+        h2 {
+          text-transform: uppercase;
+          font-size: 20px;
+          color: #fff;
+        }
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        vertical-align: middle;
+      }
+    }
+  }
+  footer {
+    background: #17a285;
+    background-image: url(../img/featured/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 40px 0;
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      p {
+        font-size: 20px;
+        color: #fff;
+      }
+      button {
+        background: none;
+        border: none;
+        padding: 8px 30px;
+        font-size: 16px;
+        color: #fff;
+        border-radius: 20px;
+        border: solid 1px #fff;
+        cursor: pointer;
+      }
+    }
+  }
+}
+/* xl-размер (>=1200px) */
+/* CSS для >=1200px */
+
+/* lg-размер (<=1199px) */
+@media (max-width: 1199px) {
+  /* CSS для ширины от 992px до 1199px */
+}
+
+/* md-размер (<=991px) */
+@media (max-width: 991px) {
+  /* CSS для ширины от 768px до 991px */
+  .featured {
+    ul {
+      li {
+        height: 200px;
+        &:nth-child(1) {
+          flex: 1;
+        }
+      }
+    }
+    footer {
+      .row {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        button {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+
+/* sm-размер (<=768px) */
+@media (max-width: 767px) {
+  /* CSS для ширины от 576px до 767px */
+}
+
+/* xs-размер (<=575px) */
+@media (max-width: 575px) {
+  /* CSS для ширины до 575px (включительно) */
+  .featured {
+    ul {
+      li,
+      li:nth-child(1) {
+        flex-basis: 100%;
+      }
+    }
+  }
+}

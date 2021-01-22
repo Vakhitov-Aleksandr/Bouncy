@@ -3,7 +3,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 100%;
-  --color-accent: #19BD9A;
+  --color-accent: #19bd9a;
 }
 
 *,
@@ -37,6 +37,13 @@ body {
   overflow-x: hidden;
 }
 
+nav,
+header,
+footer,
+figure {
+  display: block;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -55,7 +62,7 @@ body {
 
 .section-header__title {
   font-size: 20px;
-  color: #333B46;
+  color: #333b46;
   font-weight: 700;
   padding-bottom: 28px;
   text-transform: uppercase;
@@ -63,7 +70,7 @@ body {
 
 .section-header__subtitle {
   font-size: 14px;
-  color: #81868E;
+  color: #81868e;
   font-weight: 400;
 }
 
@@ -432,6 +439,193 @@ body {
   .details .article__text {
     width: 100%;
     padding: 15px;
+  }
+}
+
+.featured ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.featured ul li {
+  height: 319px;
+  width: 33.333%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.featured ul li:nth-child(1) {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.featured ul li:hover header {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.featured ul li:hover a {
+  opacity: 1;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.featured ul li a {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  border-radius: 50%;
+  color: #333;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 0;
+}
+
+.featured ul li a img {
+  width: 10px;
+  height: 10px;
+}
+
+.featured ul li header {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(0, 0, 0, 0.685);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.featured ul li header h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #fff;
+}
+
+.featured ul li img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: middle;
+}
+
+.featured footer {
+  background: #17a285;
+  background-image: url(../img/featured/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 40px 0;
+}
+
+.featured footer .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.featured footer .row p {
+  font-size: 20px;
+  color: #fff;
+}
+
+.featured footer .row button {
+  background: none;
+  border: none;
+  padding: 8px 30px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 20px;
+  border: solid 1px #fff;
+  cursor: pointer;
+}
+
+/* xl-размер (>=1200px) */
+/* CSS для >=1200px */
+/* lg-размер (<=1199px) */
+@media (max-width: 1199px) {
+  /* CSS для ширины от 992px до 1199px */
+}
+
+/* md-размер (<=991px) */
+@media (max-width: 991px) {
+  /* CSS для ширины от 768px до 991px */
+  .featured ul li {
+    height: 200px;
+  }
+  .featured ul li:nth-child(1) {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .featured footer .row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .featured footer .row button {
+    margin-top: 30px;
+  }
+}
+
+/* sm-размер (<=768px) */
+@media (max-width: 767px) {
+  /* CSS для ширины от 576px до 767px */
+}
+
+/* xs-размер (<=575px) */
+@media (max-width: 575px) {
+  /* CSS для ширины до 575px (включительно) */
+  .featured ul li,
+  .featured ul li:nth-child(1) {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
