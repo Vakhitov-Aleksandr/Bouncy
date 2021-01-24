@@ -41,8 +41,15 @@ figure {
   margin: 0 auto;
 }
 .section {
-  padding: 94px 0;
+  padding: 137px 0;
 }
+// Classes
+.img{
+  vertical-align: middle;
+}
+
+
+
 
 .section-header {
   padding-bottom: 60px;
@@ -66,6 +73,7 @@ figure {
 @import "details";
 @import "featured";
 @import "services";
+@import "team";
 
 /* xl-размер (>=1200px) */
 /* CSS для >=1200px */
