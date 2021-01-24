@@ -739,34 +739,34 @@ figure {
   }
 }
 
-.team {
+.quotes {
   padding: 90px 0;
   background: #000;
-  background-image: url(../img/team/bg.png);
+  background-image: url(../img/quotes/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   position: relative;
 }
 
-.team .article {
+.quotes .article {
   max-width: 50%;
 }
 
-.team .article .title {
+.quotes .article .title {
   font-size: 20px;
   color: #f3f3f3;
   margin-bottom: 50px;
   text-transform: uppercase;
 }
 
-.team .article .text {
+.quotes .article .text {
   font-size: 16px;
   color: #b2b3b3;
   margin-bottom: 22px;
 }
 
-.team .article .signature {
+.quotes .article .signature {
   font-size: 14px;
   text-transform: uppercase;
   color: #b2b3b3;
@@ -774,20 +774,20 @@ figure {
   line-height: 1.7;
 }
 
-.team .img {
+.quotes .img {
   position: absolute;
   right: 98px;
   top: -40px;
 }
 
 @media (max-width: 991px) {
-  .team {
+  .quotes {
     overflow-x: hidden;
   }
-  .team .article {
+  .quotes .article {
     max-width: 70%;
   }
-  .team .img {
+  .quotes .img {
     right: 0;
     top: 50%;
     -webkit-transform: translate(50%, -50%);
@@ -796,10 +796,10 @@ figure {
 }
 
 @media (max-width: 767px) {
-  .team .article {
+  .quotes .article {
     max-width: 90%;
   }
-  .team img {
+  .quotes img {
     right: 0;
     top: 50%;
     -webkit-transform: translate(80%, -50%);
@@ -808,10 +808,10 @@ figure {
 }
 
 @media (max-width: 575px) {
-  .team .article {
+  .quotes .article {
     max-width: none;
   }
-  .team img {
+  .quotes img {
     display: none;
   }
 }

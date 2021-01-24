@@ -1,7 +1,7 @@
-.team {
+.quotes {
   padding: 90px 0;
   background: #000;
-  background-image: url(../img/team/bg.png);
+  background-image: url(../img/quotes/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -35,7 +35,7 @@
   }
 }
 @media (max-width: 991px) {
-  .team {
+  .quotes {
     overflow-x: hidden;
     .article{
       max-width: 70%;
@@ -48,7 +48,7 @@
   }
 }
 @media (max-width: 767px){
-  .team {
+  .quotes {
     .article{
       max-width: 90%;
     }
@@ -60,7 +60,7 @@
   }
 }
 @media (max-width: 575px){
-  .team {
+  .quotes {
     .article{
       max-width: none;
     }
