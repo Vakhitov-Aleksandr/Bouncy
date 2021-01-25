@@ -1,0 +1,59 @@
+.reviews{
+  background: #F3F3F3;
+  .slider{
+    background: #fff;
+    padding: 54px 103px;
+  }
+  .review{
+    display: flex;
+    align-items: flex-start;
+    &__content{
+      padding-left: 70px;
+    }
+    &__text{
+      font-size: 16px;
+      color: #81868E;
+      margin-bottom: 20px;
+    }
+    &__name{
+      font-size: 16px;
+      color: #19BD9A;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+    &__data{
+      font-size: 14px;
+      color: #464646;
+      text-transform: uppercase;
+    }
+    
+  }
+}
+/* sm-размер (<=768px) */
+@media (max-width: 767px) {
+  /* CSS для ширины от 576px до 767px */
+  .reviews{
+    .slider{
+      padding: 20px;
+    }
+    .review{
+      flex-wrap: wrap;
+      justify-content: center;
+      &__content{
+        padding: 0;
+      }
+      &__text{
+        margin-top: 40px;
+      }
+    }
+    
+  }
+}
+
+/* xs-размер (<=575px) */
+@media (max-width: 575px) {
+  /* CSS для ширины до 575px (включительно) */
+  .container {
+    max-width: none;
+  }
+}

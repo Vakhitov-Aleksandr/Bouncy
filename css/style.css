@@ -955,6 +955,76 @@ figure {
   }
 }
 
+.reviews {
+  background: #F3F3F3;
+}
+
+.reviews .slider {
+  background: #fff;
+  padding: 54px 103px;
+}
+
+.reviews .review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.reviews .review__content {
+  padding-left: 70px;
+}
+
+.reviews .review__text {
+  font-size: 16px;
+  color: #81868E;
+  margin-bottom: 20px;
+}
+
+.reviews .review__name {
+  font-size: 16px;
+  color: #19BD9A;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.reviews .review__data {
+  font-size: 14px;
+  color: #464646;
+  text-transform: uppercase;
+}
+
+/* sm-размер (<=768px) */
+@media (max-width: 767px) {
+  /* CSS для ширины от 576px до 767px */
+  .reviews .slider {
+    padding: 20px;
+  }
+  .reviews .review {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .reviews .review__content {
+    padding: 0;
+  }
+  .reviews .review__text {
+    margin-top: 40px;
+  }
+}
+
+/* xs-размер (<=575px) */
+@media (max-width: 575px) {
+  /* CSS для ширины до 575px (включительно) */
+  .container {
+    max-width: none;
+  }
+}
+
 /* xl-размер (>=1200px) */
 /* CSS для >=1200px */
 /* lg-размер (<=1199px) */
