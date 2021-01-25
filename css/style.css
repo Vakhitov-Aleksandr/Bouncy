@@ -894,6 +894,34 @@ figure {
   margin-top: 5px;
 }
 
+.team-cta {
+  background: #000;
+  background-image: url(../img/team/cta-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.team-cta .title {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.team-cta .btn {
+  background: none;
+  border: none;
+  padding: 8px 30px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 20px;
+  border: solid 1px #fff;
+  cursor: pointer;
+}
+
 /* xl-размер (>=1200px) */
 /* CSS для >=1200px */
 /* lg-размер (<=1199px) */
