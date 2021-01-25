@@ -57,7 +57,6 @@
     &__text {
       font-size: 14px;
       color: #81868e;
-      padding-bottom: 34px;
       text-align: right;
     }
 
@@ -77,7 +76,7 @@
     text-transform: uppercase;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin-top: 30px;
 
     // .skill-data__name
 
@@ -120,6 +119,54 @@
       border-radius: 20px;
       border: solid 1px #fff;
       cursor: pointer;
+    }
+  }
+}
+/* sm-размер (<=768px) */
+@media (max-width: 767px) {
+  /* CSS для ширины от 576px до 767px */
+  .team {
+    .slider {
+      .slides {
+        .slide {
+          position: relative;
+          z-index: 2;
+        }
+      }
+    }
+    .data {
+    }
+    .img {
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      top: 0;
+      width: 100px;
+      height: auto;
+    }
+  }
+}
+
+/* xs-размер (<=575px) */
+@media (max-width: 575px) {
+  /* CSS для ширины до 575px (включительно) */
+  .team {
+    .slider {
+      .slides {
+        .slide {
+          justify-content: center;
+        }
+      }
+    }
+    .data {
+      width: 100%;
+
+      &__text {
+        width: 70%;
+        margin-left: auto;
+      }
+    }
+    .img {
     }
   }
 }

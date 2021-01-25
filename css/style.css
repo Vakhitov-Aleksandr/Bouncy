@@ -868,7 +868,6 @@ figure {
 .team .data__text {
   font-size: 14px;
   color: #81868e;
-  padding-bottom: 34px;
   text-align: right;
 }
 
@@ -881,7 +880,7 @@ figure {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .team .skill-data__level {
@@ -920,6 +919,40 @@ figure {
   border-radius: 20px;
   border: solid 1px #fff;
   cursor: pointer;
+}
+
+/* sm-размер (<=768px) */
+@media (max-width: 767px) {
+  /* CSS для ширины от 576px до 767px */
+  .team .slider .slides .slide {
+    position: relative;
+    z-index: 2;
+  }
+  .team .img {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: auto;
+  }
+}
+
+/* xs-размер (<=575px) */
+@media (max-width: 575px) {
+  /* CSS для ширины до 575px (включительно) */
+  .team .slider .slides .slide {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .team .data {
+    width: 100%;
+  }
+  .team .data__text {
+    width: 70%;
+    margin-left: auto;
+  }
 }
 
 /* xl-размер (>=1200px) */
