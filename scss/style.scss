@@ -57,7 +57,7 @@ figure {
   &__title {
     font-size: 20px;
     color: #333b46;
-    font-weight: 700;
+    font-weight: 400;
     padding-bottom: 28px;
     text-transform: uppercase;
   }
@@ -77,6 +77,7 @@ figure {
 @import "portfolio";
 @import "team";
 @import "reviews";
+@import "blog";
 
 /* xl-размер (>=1200px) */
 /* CSS для >=1200px */

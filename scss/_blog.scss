@@ -1,0 +1,74 @@
+.blog{
+  background: #000;
+  background-image: url(../img/blog/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  .section-header{
+    text-align: left;
+    max-width: 492px;
+    
+    &__title{
+      color: #fff;
+    }
+    &__subtitle{
+      color: #B2B3B3;
+    }
+  }
+  .article{
+    color: #fff;
+    width: 587px;
+    padding-left: 80px;
+    &__header{
+      margin-bottom: 50px;
+    }
+    &__title{
+      font-size: 20px;
+      color: #E1E4E9;
+      margin-bottom: 7px;
+    }
+    &__author{
+      grid-template: 14px;
+      color: #81868E;
+      text-transform: uppercase;
+    }
+    &__data{
+      font-size: 14px;
+      color: #464646;
+      margin-top: 7px;
+
+    }
+    &__text{
+      font-size: 14px;
+      color: #81868E;
+      margin-bottom: 43px;
+    }
+    &__link{
+      font-size: 16px;
+      color: #B2B3B3;
+      text-transform: uppercase;
+    }
+  }
+}
+
+/* sm-размер (<=768px) */
+@media (max-width: 767px) {
+  /* CSS для ширины от 576px до 767px */
+  .blog{
+    .article{
+      max-width: 80%;
+      padding: 0;
+    }
+  }
+}
+
+/* xs-размер (<=575px) */
+@media (max-width: 575px) {
+  /* CSS для ширины до 575px (включительно) */
+  .blog{
+    .article{
+      max-width: 100%;
+    }
+  }
+}
